@@ -1,598 +1,307 @@
 <!DOCTYPE html>
+<!-- Physioverse Therapy Center | About Us | Physiotherapy Clinic in Bangalore -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NexusBuilder | About & Engineering Units</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Physioverse | Best Physiotherapy Clinic in Bangalore | Yelahanka</title>
+  <meta name="title" content="About Physioverse Therapy Center | Physiotherapy Clinic in Bangalore" />
+  <meta name="description" content="Learn about Physioverse Therapy Center — Bangalore's most trusted physiotherapy clinic in Yelahanka. BPT/MPT certified physios specialising in back pain, sports injury, dry needling & home visit physiotherapy in Bangalore." />
+  <meta name="keywords" content="about physioverse, physiotherapy clinic Bangalore, physiotherapist Bangalore, back pain treatment Bangalore, sports injury physiotherapy Bangalore, dry needling Bangalore, home visit physiotherapy Bangalore, Yelahanka physiotherapy" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Physioverse Therapy Center" />
+  <meta name="geo.region" content="IN-KA" />
+  <meta name="geo.placename" content="Yelahanka, Bengaluru" />
+  <link rel="canonical" href="https://www.physioverse.in/about.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.physioverse.in/about.html" />
+  <meta property="og:title" content="About Physioverse Therapy Center | Physiotherapy in Bangalore" />
+  <meta property="og:description" content="BPT/MPT certified physiotherapists offering back pain treatment, sports injury rehab, dry needling, and home visit physiotherapy in Bangalore." />
+  <meta property="og:site_name" content="Physioverse Therapy Center" />
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/lineicons.css" />
+  <link rel="stylesheet" href="assets/css/ud-styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --primary:#1a6fc4; --primary-dark:#1358a0; --primary-light:#e8f1fb; --accent:#25d366; --text-dark:#1e2d3d; --text-muted:#6b7c93; --bg-light:#f4f8fd; --white:#ffffff; --border:#dce7f5; }
+    body { font-family: 'Inter', sans-serif; color: var(--text-dark); }
+    .ud-header { background: var(--white); box-shadow: 0 2px 16px rgba(26,111,196,0.08); position: sticky; top:0; z-index:999; padding: 0; }
+    .ud-header .navbar { padding: 16px 0; }
+    .navbar-brand .clinic-logo { font-size: 22px; font-weight: 800; color: var(--primary); letter-spacing: -0.5px; }
+    .navbar-brand .clinic-logo span { color: var(--primary-dark); }
+    .ud-menu-scroll { font-size: 15px; font-weight: 500; color: var(--text-dark) !important; padding: 8px 16px !important; transition: color .2s; text-decoration: none; }
+    .ud-menu-scroll:hover { color: var(--primary) !important; }
+    .navbar-nav { gap: 4px; }
+    .nav-item { list-style: none; }
+    .navbar-toggler { background: none !important; border: 2px solid var(--primary) !important; border-radius: 6px; padding: 6px 10px; cursor: pointer; box-shadow: none !important; }
+    .navbar-toggler .toggler-icon { display: block !important; width: 22px; height: 2px; background: var(--primary); margin: 4px 0; border-radius: 2px; opacity: 1 !important; }
+    .navbar-collapse { display: flex; align-items: center; justify-content: space-between; flex: 1; }
+    .navbar-btn { display: flex; gap: 10px; align-items: center; }
+    .btn-book { background: var(--primary); color: var(--white) !important; border-radius: 8px; padding: 10px 22px !important; font-weight: 600; font-size: 14px; transition: background .2s; text-decoration: none; }
+    .btn-book:hover { background: var(--primary-dark); }
+    @media (max-width: 991px) {
+      .navbar-collapse { display: none; flex-direction: column; align-items: flex-start; padding: 16px 0; }
+      .navbar-collapse.show { display: flex; }
+      .navbar-btn { margin-top: 12px; }
+    }
+    /* Page Banner */
+    .pv-page-banner { background: linear-gradient(135deg, #1a6fc4 0%, #0d3f78 100%); padding: 60px 0; text-align: center; }
+    .pv-page-banner h1 { font-size: clamp(28px,4vw,44px); font-weight: 800; color: #fff; margin: 0; }
+    .pv-page-banner p { color: rgba(255,255,255,.8); margin-top: 10px; font-size: 16px; }
+    .breadcrumb-nav { margin-top: 14px; }
+    .breadcrumb-nav a, .breadcrumb-nav span { color: rgba(255,255,255,.7); font-size: 14px; text-decoration: none; }
+    .breadcrumb-nav a:hover { color: #fff; }
+    .breadcrumb-nav .sep { margin: 0 8px; }
+    /* Content */
+    .section-tag { display: inline-block; background: var(--primary-light); color: var(--primary); border-radius: 30px; padding: 5px 18px; font-size: 13px; font-weight: 600; margin-bottom: 12px; }
+    .section-title { font-size: clamp(24px,3.5vw,36px); font-weight: 800; color: var(--text-dark); margin-bottom: 14px; line-height: 1.25; }
+    .pv-about-page { padding: 80px 0; background: var(--white); }
+    .about-img-box { background: linear-gradient(135deg, var(--primary-light) 0%, #dbeeff 100%); border-radius: 20px; padding: 48px 36px; text-align: center; }
+    .about-big-icon { font-size: 96px; }
+    .about-badge-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; justify-content: center; }
+    .about-badge { background: var(--white); color: var(--primary); border-radius: 30px; padding: 7px 18px; font-size: 13px; font-weight: 600; border: 1px solid var(--border); }
+    .about-text p { font-size: 15px; color: var(--text-muted); line-height: 1.8; margin-bottom: 16px; }
+    .about-text h2 { font-size: clamp(22px,3vw,34px); font-weight: 800; color: var(--text-dark); margin-bottom: 14px; }
+    .stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin: 36px 0; }
+    .stat-box { text-align: center; background: var(--bg-light); border-radius: 14px; padding: 24px 16px; border: 1px solid var(--border); }
+    .stat-box .num { font-size: 28px; font-weight: 800; color: var(--primary); }
+    .stat-box .lbl { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+    @media(max-width:767px){ .stat-row { grid-template-columns: repeat(2,1fr); } }
+    /* Team */
+    .pv-team { padding: 80px 0; background: var(--bg-light); }
+    .team-card { background: var(--white); border-radius: 16px; padding: 32px 24px; border: 1px solid var(--border); text-align: center; transition: all .25s; }
+    .team-card:hover { box-shadow: 0 4px 24px rgba(26,111,196,.1); transform: translateY(-4px); }
+    .team-avatar { width: 72px; height: 72px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 800; color: #fff; margin: 0 auto 16px; }
+    .team-card h5 { font-size: 17px; font-weight: 700; color: var(--text-dark); margin-bottom: 4px; }
+    .team-card p { font-size: 13px; color: var(--text-muted); }
+    /* Footer */
+    .pv-footer { background: #0d1f35; padding: 60px 0 0; color: rgba(255,255,255,.7); }
+    .footer-brand .logo { font-size: 22px; font-weight: 800; color: #fff; display: block; margin-bottom: 12px; }
+    .footer-brand .logo span { color: #7ecbff; }
+    .footer-brand p { font-size: 14px; line-height: 1.7; margin-bottom: 20px; }
+    .footer-socials { display: flex; gap: 10px; }
+    .footer-socials a { width: 36px; height: 36px; border-radius: 8px; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,.7); font-size: 15px; text-decoration: none; transition: background .2s; }
+    .footer-socials a:hover { background: var(--primary); color: #fff; }
+    .footer-col h5 { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 18px; }
+    .footer-links { list-style: none; padding: 0; margin: 0; }
+    .footer-links li { margin-bottom: 10px; }
+    .footer-links a { font-size: 14px; color: rgba(255,255,255,.6); text-decoration: none; transition: color .2s; }
+    .footer-links a:hover { color: #7ecbff; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding: 20px 0; margin-top: 40px; }
+    .footer-bottom p { font-size: 13px; color: rgba(255,255,255,.4); margin: 0; }
+    .floating-wa { position: fixed; bottom: 28px; right: 28px; z-index: 9999; }
+    .floating-wa a { width: 56px; height: 56px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 26px; text-decoration: none; box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: transform .2s; }
+    .floating-wa a:hover { transform: scale(1.1); }
+    .btn-cta { background: var(--primary); color: #fff !important; border-radius: 8px; padding: 12px 28px; font-weight: 700; font-size: 15px; text-decoration: none; display: inline-block; transition: background .2s; }
+    .btn-cta:hover { background: var(--primary-dark); }
+  </style>
+</head>
+<body>
 
-    <!--====== Favicon Icon ======-->
-    <link
-      rel="shortcut icon"
-      href="assets/images/favicon.ico"
-      type="image/x-icon"
-    />
+  <!-- ====== Header ====== -->
+  <header class="ud-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+              <span class="clinic-logo">Physio<span>verse</span></span>
+            </a>
+            <button class="navbar-toggler" id="navToggler" aria-label="Toggle navigation">
+              <span class="toggler-icon"></span>
+              <span class="toggler-icon"></span>
+              <span class="toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse" id="navCollapse">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="ud-menu-scroll" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="ud-menu-scroll" href="index.html#services">Services</a></li>
+                <li class="nav-item"><a class="ud-menu-scroll" href="about.html">About</a></li>
+                <li class="nav-item"><a class="ud-menu-scroll" href="index.html#testimonials">Reviews</a></li>
+                <li class="nav-item"><a class="ud-menu-scroll" href="index.html#contact">Contact</a></li>
+              </ul>
+              <div class="navbar-btn">
+                <a href="index.html#contact" class="btn-book">Book Appointment</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <!-- ===== All CSS files ===== -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/lineicons.css" />
-    <link rel="stylesheet" href="assets/css/ud-styles.css" />
-  </head>
-  <body>
-    <!-- ====== Header Start ====== -->
-    <header class="ud-header">
+  <!-- ====== Page Banner ====== -->
+  <section class="pv-page-banner">
+    <div class="container">
+      <h1>About Physioverse Therapy Center</h1>
+      <p>Bangalore's Most Trusted Physiotherapy Clinic in Yelahanka, Rajanukunte</p>
+      <nav class="breadcrumb-nav">
+        <a href="index.html">Home</a>
+        <span class="sep">›</span>
+        <span>About Us</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ====== About Section ====== -->
+  <section class="pv-about-page">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5 wow fadeInUp" data-wow-delay=".1s">
+          <div class="about-img-box">
+            <div class="about-big-icon">🏥</div>
+            <h3 style="color:var(--primary);font-weight:800;margin-top:16px;">Physioverse Therapy Center</h3>
+            <p style="color:var(--text-muted);font-size:14px;">Physiotherapy in Bangalore · Yelahanka</p>
+            <div class="about-badge-list">
+              <span class="about-badge">✓ BPT/MPT Certified</span>
+              <span class="about-badge">✓ 8+ Years</span>
+              <span class="about-badge">✓ 5000+ Patients</span>
+              <span class="about-badge">✓ Home Visits</span>
+              <span class="about-badge">✓ Dry Needling</span>
+              <span class="about-badge">✓ Sports Injury Rehab</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 about-text wow fadeInUp" data-wow-delay=".2s">
+          <span class="section-tag">About Us | Physiotherapy Clinic in Bangalore</span>
+          <h2>Bangalore's Most Trusted Physiotherapy Clinic Since 2016</h2>
+          <p>
+            Physioverse Therapy Center is a premium physiotherapy clinic in Bangalore located in Yelahanka, Rajanukunte — conveniently serving patients across North Bangalore including Devanahalli, Doddaballapura, Hebbal, and Yelahanka New Town. Our team of <strong>BPT/MPT-certified physiotherapists</strong> specialises in evidence-based, personalised rehabilitation for every age and condition.
+          </p>
+          <p>
+            Whether you're seeking <strong>back pain treatment in Bangalore</strong>, expert <strong>sports injury physiotherapy in Bangalore</strong>, <strong>dry needling</strong>, cupping therapy, electrotherapy, post-surgery rehabilitation, or the convenience of <strong>home visit physiotherapy in Bangalore</strong> — our therapists build a treatment plan tailored to your specific goals and recovery timeline.
+          </p>
+          <p>
+            With over 5,000 patients successfully treated and a 98% satisfaction rate, Physioverse is the go-to physiotherapy clinic in Bangalore for fast, lasting pain relief and functional recovery.
+          </p>
+          <div class="stat-row">
+            <div class="stat-box"><div class="num">5000+</div><div class="lbl">Patients Treated</div></div>
+            <div class="stat-box"><div class="num">98%</div><div class="lbl">Success Rate</div></div>
+            <div class="stat-box"><div class="num">8+</div><div class="lbl">Years Experience</div></div>
+            <div class="stat-box"><div class="num">15+</div><div class="lbl">Expert Therapists</div></div>
+          </div>
+          <a href="index.html#contact" class="btn-cta">Book a Physiotherapy Consultation →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Our Approach ====== -->
+  <section class="pv-team">
+    <div class="container">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-7 text-center">
+          <span class="section-tag">Our Expertise</span>
+          <h2 class="section-title">What We Specialise In</h2>
+          <p style="color:var(--text-muted);font-size:15px;">Our physiotherapists in Bangalore are certified experts in a wide range of treatments designed to get you moving pain-free — faster.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".1s">
+          <div class="team-card">
+            <div class="team-avatar" style="background:#1a6fc4;">💊</div>
+            <h5>Back Pain Treatment</h5>
+            <p>Expert physiotherapy for lower back pain, sciatica, lumbar disc issues & postural problems in Bangalore.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".15s">
+          <div class="team-card">
+            <div class="team-avatar" style="background:#16a34a;">⚡</div>
+            <h5>Sports Injury Rehab</h5>
+            <p>Specialised sports injury physiotherapy in Bangalore for athletes — ACL, ligament, muscle, and joint recovery.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+          <div class="team-card">
+            <div class="team-avatar" style="background:#9333ea;">🪡</div>
+            <h5>Dry Needling</h5>
+            <p>Evidence-based dry needling in Bangalore targeting trigger points to release chronic muscle tightness and pain.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".25s">
+          <div class="team-card">
+            <div class="team-avatar" style="background:#f97316;">🏠</div>
+            <h5>Home Visit Physio</h5>
+            <p>Professional home visit physiotherapy in Bangalore for seniors, post-op patients & those who prefer at-home care.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Footer ====== -->
+  <footer class="pv-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">
+            <span class="logo">Physio<span>verse</span> Therapy Center</span>
+            <p>Bangalore's trusted physiotherapy clinic in Yelahanka offering back pain treatment, sports injury rehab, dry needling, cupping therapy, electrotherapy, post-surgery rehab, and home visit physiotherapy.</p>
+            <div class="footer-socials">
+              <a href="#" aria-label="Facebook"><i class="lni lni-facebook-filled"></i></a>
+              <a href="#" aria-label="Instagram"><i class="lni lni-instagram-filled"></i></a>
+              <a href="https://wa.me/918792282893" target="_blank" aria-label="WhatsApp"><i class="lni lni-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-col">
+            <h5>Our Services</h5>
+            <ul class="footer-links">
+              <li><a href="index.html#services">Back Pain Treatment</a></li>
+              <li><a href="index.html#services">Neck Pain Treatment</a></li>
+              <li><a href="index.html#services">Sports Injury Rehab</a></li>
+              <li><a href="index.html#services">Dry Needling</a></li>
+              <li><a href="index.html#services">Home Visits</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-col">
+            <h5>Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="index.html#testimonials">Patient Reviews</a></li>
+              <li><a href="index.html#contact">Book Appointment</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-col">
+            <h5>Contact Info</h5>
+            <p style="font-size:14px;color:rgba(255,255,255,.6);margin-bottom:8px;"><i class="lni lni-map-marker" style="color:#7ecbff;margin-right:6px;"></i>No-29, Honnenahalli, Doddaballapura Main Rd, Yelahanka, Bengaluru 560064</p>
+            <p style="font-size:14px;color:rgba(255,255,255,.6);margin-bottom:8px;"><i class="lni lni-phone" style="color:#7ecbff;margin-right:6px;"></i><a href="tel:+918792282893" style="color:inherit;">+91 87922 82893</a></p>
+            <p style="font-size:14px;color:rgba(255,255,255,.6);margin-bottom:8px;"><i class="lni lni-timer" style="color:#7ecbff;margin-right:6px;"></i>Mon–Sat: 11 AM – 8 PM | Sun: Closed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <nav class="navbar navbar-expand-lg">
-              <a class="navbar-brand" href="index.html">
-                <span class="fw-bold text-white startup-logo">NEXUSBUILDER</span>
-              </a>
-              <button class="navbar-toggler">
-                <span class="toggler-icon"> </span>
-                <span class="toggler-icon"> </span>
-                <span class="toggler-icon"> </span>
-              </button>
-
-              <div class="navbar-collapse">
-                <ul id="nav" class="navbar-nav mx-auto">
-                  <li class="nav-item">
-                    <a class="ud-menu-scroll" href="#home">Home</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="ud-menu-scroll" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="ud-menu-scroll" href="#pricing">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="ud-menu-scroll" href="#team">Team</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="ud-menu-scroll" href="#contact">Contact</a>
-                  </li>
-                  <li class="nav-item nav-item-has-children">
-                    <a href="javascript:void(0)"> Pages </a>
-                    <ul class="ud-submenu">
-                      <li class="ud-submenu-item">
-                        <a href="about.html" class="ud-submenu-link">
-                          About Page
-                        </a>
-                      </li>
-                      <li class="ud-submenu-item">
-                        <a href="pricing.html" class="ud-submenu-link">
-                          Pricing Page
-                        </a>
-                      </li>
-                      <li class="ud-submenu-item">
-                        <a href="contact.html" class="ud-submenu-link">
-                          Contact Page
-                        </a>
-                      </li>
-                      <li class="ud-submenu-item">
-                        <a href="blog.html" class="ud-submenu-link">
-                          Blog Grid Page
-                        </a>
-                      </li>
-                      <li class="ud-submenu-item">
-                        <a href="blog-details.html" class="ud-submenu-link">
-                          Blog Details Page
-                        </a>
-                      </li>
-                      <li class="ud-submenu-item">
-                        <a href="login.html" class="ud-submenu-link">
-                          Sign In Page
-                        </a>
-                      </li>
-                      <li class="ud-submenu-item">
-                        <a href="404.html" class="ud-submenu-link">404 Page</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="navbar-btn d-none d-sm-inline-block">
-                <a href="login.html" class="ud-main-btn ud-login-btn">
-                  Sign In
-                </a>
-                <a class="ud-main-btn ud-white-btn" href="javascript:void(0)">
-                  Sign Up
-                </a>
-              </div>
-            </nav>
-          </div>
-        </div>
+        <p class="text-center">© 2024 Physioverse Therapy Center. All rights reserved. | Physiotherapy in Bangalore</p>
       </div>
-    </header>
-    <!-- ====== Header End ====== -->
+    </div>
+  </footer>
 
-    <!-- ====== Banner Start ====== -->
-    <section class="ud-page-banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="ud-banner-content">
-              <h1>About Page</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ====== Banner End ====== -->
-
-    <!-- ====== About Start ====== -->
-    <section id="about" class="ud-about">
-      <div class="container">
-        <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
-          <div class="ud-about-content-wrapper">
-            <div class="ud-about-content">
-              <span class="tag">About NexusBuilder</span>
-              <h2>Engineering High-Scale Systems & Developing Future Tech Leaders.</h2>
-              <p>
-                NexusBuilder specializes in designing and delivering production-ready digital systems using modern
-                full-stack architecture, cloud-native deployments, and applied AI models. We help organizations move
-                from prototypes to resilient platforms through opinionated architecture, rigorous code quality, and
-                automation-first delivery practices.
-              </p>
-
-              <p>
-                Beyond shipping software, we invest heavily in people. Our engineering units mentor ambitious students
-                and developers through real-world projects, exposing them to scalable architecture, observability,
-                DevOps culture, and product thinking so they can grow into the next generation of tech leaders.
-              </p>
-              <a href="contact.html" class="ud-main-btn">Discuss a Project</a>
-            </div>
-          </div>
-          <div class="ud-about-image">
-            <img src="assets/images/about/about-image.svg" alt="about-image" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ====== About End ====== -->
-
-    <!-- ====== Team Start ====== -->
-    <section id="team" class="ud-team">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="ud-section-title mx-auto text-center">
-              <span>Our Engineering Units</span>
-              <h2>The Teams Behind NexusBuilder</h2>
-              <p>
-                Cross-functional units that collaborate on architecture, cloud, AI, and mentorship to deliver
-                production-grade systems and grow future engineers.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="ud-single-team wow fadeInUp" data-wow-delay=".1s">
-              <div class="ud-team-image-wrapper">
-                <div class="ud-team-image">
-                  <img src="assets/images/team/team-01.png" alt="team" />
-                </div>
-
-                <img
-                  src="assets/images/team/dotted-shape.svg"
-                  alt="shape"
-                  class="shape shape-1"
-                />
-                <img
-                  src="assets/images/team/shape-2.svg"
-                  alt="shape"
-                  class="shape shape-2"
-                />
-              </div>
-              <div class="ud-team-info">
-                <h5>Web Core Unit</h5>
-                <h6>Full-Stack Engineering</h6>
-              </div>
-              <ul class="ud-team-socials">
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-facebook-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-twitter-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-instagram-filled"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="ud-single-team wow fadeInUp" data-wow-delay=".15s">
-              <div class="ud-team-image-wrapper">
-                <div class="ud-team-image">
-                  <img src="assets/images/team/team-02.png" alt="team" />
-                </div>
-
-                <img
-                  src="assets/images/team/dotted-shape.svg"
-                  alt="shape"
-                  class="shape shape-1"
-                />
-                <img
-                  src="assets/images/team/shape-2.svg"
-                  alt="shape"
-                  class="shape shape-2"
-                />
-              </div>
-              <div class="ud-team-info">
-                <h5>Cloud Architecture Unit</h5>
-                <h6>DevOps &amp; Infrastructure</h6>
-              </div>
-              <ul class="ud-team-socials">
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-facebook-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-twitter-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-instagram-filled"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="ud-single-team wow fadeInUp" data-wow-delay=".2s">
-              <div class="ud-team-image-wrapper">
-                <div class="ud-team-image">
-                  <img src="assets/images/team/team-03.png" alt="team" />
-                </div>
-
-                <img
-                  src="assets/images/team/dotted-shape.svg"
-                  alt="shape"
-                  class="shape shape-1"
-                />
-                <img
-                  src="assets/images/team/shape-2.svg"
-                  alt="shape"
-                  class="shape shape-2"
-                />
-              </div>
-              <div class="ud-team-info">
-                <h5>AI Innovation Lab</h5>
-                <h6>Applied AI &amp; Automation</h6>
-              </div>
-              <ul class="ud-team-socials">
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-facebook-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-twitter-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-instagram-filled"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="ud-single-team wow fadeInUp" data-wow-delay=".25s">
-              <div class="ud-team-image-wrapper">
-                <div class="ud-team-image">
-                  <img src="assets/images/team/team-04.png" alt="team" />
-                </div>
-
-                <img
-                  src="assets/images/team/dotted-shape.svg"
-                  alt="shape"
-                  class="shape shape-1"
-                />
-                <img
-                  src="assets/images/team/shape-2.svg"
-                  alt="shape"
-                  class="shape shape-2"
-                />
-              </div>
-              <div class="ud-team-info">
-                <h5>Mentorship Division</h5>
-                <h6>Tech Leadership &amp; Growth</h6>
-              </div>
-              <ul class="ud-team-socials">
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-facebook-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-twitter-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-instagram-filled"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ====== Team End ====== -->
-
-    <!-- ====== Footer Start ====== -->
-    <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
-      <div class="shape shape-1">
-        <img src="assets/images/footer/shape-1.svg" alt="shape" />
-      </div>
-      <div class="shape shape-2">
-        <img src="assets/images/footer/shape-2.svg" alt="shape" />
-      </div>
-      <div class="shape shape-3">
-        <img src="assets/images/footer/shape-3.svg" alt="shape" />
-      </div>
-      <div class="ud-footer-widgets">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <div class="ud-widget">
-                <a href="index.html" class="ud-footer-logo">
-                  <span class="fw-bold text-white startup-logo">NEXUSBUILDER</span>
-                </a>
-                <p class="ud-widget-desc">
-                  NexusBuilder engineers scalable digital systems and cultivates the next generation of technology
-                  leaders through applied innovation and real-world mentorship.
-                </p>
-                <ul class="ud-widget-socials">
-                  <li>
-                    <a href="https://twitter.com/MusharofChy">
-                      <i class="lni lni-facebook-filled"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/MusharofChy">
-                      <i class="lni lni-twitter-filled"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/MusharofChy">
-                      <i class="lni lni-instagram-filled"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/MusharofChy">
-                      <i class="lni lni-linkedin-original"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
-              <div class="ud-widget">
-                <h5 class="ud-widget-title">About Us</h5>
-                <ul class="ud-widget-links">
-                  <li>
-                    <a href="javascript:void(0)">Home</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">Features</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">About</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">Testimonial</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div class="ud-widget">
-                <h5 class="ud-widget-title">Features</h5>
-                <ul class="ud-widget-links">
-                  <li>
-                    <a href="javascript:void(0)">How it works</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">Privacy policy</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">Terms of service</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">Refund policy</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div class="ud-widget">
-                <h5 class="ud-widget-title">Our Products</h5>
-                <ul class="ud-widget-links">
-                  <li>
-                    <a
-                      href="https://lipsumai.com/"
-                      target="_blank"
-                      >Lorem Ipsum With AI Generator
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://lineicons.com/"
-                      rel="nofollow noopner"
-                      target="_blank"
-                      >Lineicons
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://ecommercehtml.com/"
-                      rel="nofollow noopner"
-                      target="_blank"
-                      >Ecommerce HTML</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://ayroui.com/"
-                      rel="nofollow noopner"
-                      target="_blank"
-                      >Ayro UI</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://graygrids.com/"
-                      rel="nofollow noopner"
-                      target="_blank"
-                      >Plain Admin</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-8 col-sm-10">
-              <div class="ud-widget">
-                <h5 class="ud-widget-title">Partners</h5>
-                <ul class="ud-widget-brands">
-                  <li>
-                    <a
-                      href="https://ayroui.com/"
-                      rel="nofollow noopner"
-                      target="_blank"
-                    >
-                      <img
-                        src="assets/images/footer/brands/ayroui.svg"
-                        alt="ayroui"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://ecommercehtml.com/"
-                      rel="nofollow noopner"
-                      target="_blank"
-                    >
-                      <img
-                        src="assets/images/footer/brands/ecommerce-html.svg"
-                        alt="ecommerce-html"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://graygrids.com/"
-                      rel="nofollow noopner"
-                      target="_blank"
-                    >
-                      <img
-                        src="assets/images/footer/brands/graygrids.svg"
-                        alt="graygrids"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://lineicons.com/"
-                      rel="nofollow noopner"
-                      target="_blank"
-                    >
-                      <img
-                        src="assets/images/footer/brands/lineicons.svg"
-                        alt="lineicons"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://uideck.com/"
-                      rel="nofollow noopner"
-                      target="_blank"
-                    >
-                      <img
-                        src="assets/images/footer/brands/uideck.svg"
-                        alt="uideck"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://tailwindtemplates.co/"
-                      rel="nofollow noopner"
-                      target="_blank"
-                    >
-                      <img
-                        src="assets/images/footer/brands/tailwindtemplates.svg"
-                        alt="tailwindtemplates"
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="ud-footer-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8">
-              <ul class="ud-footer-bottom-left">
-                <li>
-                  <a href="javascript:void(0)">Privacy policy</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">Support policy</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">Terms of service</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <p class="ud-footer-bottom-right">
-                Designed and Developed by
-                <a href="https://hau.xyz" rel="nofollow">haudev</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- ====== Footer End ====== -->
-
-    <!-- ====== Back To Top Start ====== -->
-    <a href="javascript:void(0)" class="back-to-top">
-      <i class="lni lni-chevron-up"> </i>
+  <!-- Floating WhatsApp -->
+  <div class="floating-wa">
+    <a href="https://wa.me/918792282893" target="_blank" aria-label="Chat on WhatsApp">
+      <i class="lni lni-whatsapp"></i>
     </a>
-    <!-- ====== Back To Top End ====== -->
+  </div>
 
-    <!-- ====== All Javascript Files ====== -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7587631210958149"
-     crossorigin="anonymous"></script>
-  </body>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+    document.getElementById('navToggler').addEventListener('click', function() {
+      document.getElementById('navCollapse').classList.toggle('show');
+    });
+  </script>
+</body>
 </html>

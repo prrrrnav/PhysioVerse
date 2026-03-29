@@ -29,9 +29,9 @@
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
     "name": "Physioverse Therapy Center",
-    "description": "Top-rated physiotherapy clinic in Bangalore offering back pain treatment, sports injury rehabilitation, dry needling, cupping therapy, electrotherapy, post-surgery physiotherapy, and home visit physiotherapy.",
+    "description": "Top-rated physiotherapy clinic in Bangalore offering back pain treatment, sports injury rehabilitation, dry needling, cupping therapy, electrotherapy, post-surgery physiotherapy, and home visit physiotherapy in Bangalore.",
     "url": "https://www.physioverse.in",
-    "telephone": "+91-98765-43210",
+    "telephone": "+91-87922-82893",
     "email": "info@physioverse.in",
     "priceRange": "₹₹",
     "currenciesAccepted": "INR",
@@ -39,27 +39,27 @@
     "image": "https://www.physioverse.in/assets/images/og-image.jpg",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "123, 2nd Floor, MG Road, Near Trinity Metro Station",
-      "addressLocality": "Bangalore",
+      "streetAddress": "No-29, Honnenahalli, Doddaballapura Main Rd, Opp. Sai Leela Hotel, Yelahanka, Rajanukunte",
+      "addressLocality": "Bengaluru",
       "addressRegion": "Karnataka",
-      "postalCode": "560001",
+      "postalCode": "560064",
       "addressCountry": "IN"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "12.9756",
-      "longitude": "77.6097"
+      "latitude": "13.1102",
+      "longitude": "77.5847"
     },
     "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "18:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:00", "closes": "14:00" }
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "11:00", "closes": "20:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "closes": "00:00", "opens": "00:00" }
     ],
     "sameAs": [
       "https://www.facebook.com/physioverse",
-      "https://www.instagram.com/physioverse"
+      "https://www.instagram.com/physioverse",
+      "https://maps.app.goo.gl/jnzrwFVMF1hLE2g77"
     ],
-    "hasMap": "https://maps.google.com/?q=MG+Road+Bangalore",
+    "hasMap": "https://maps.app.goo.gl/jnzrwFVMF1hLE2g77",
     "medicalSpecialty": "Physiotherapy",
     "availableService": [
       { "@type": "MedicalTherapy", "name": "Back Pain Treatment Bangalore" },
@@ -133,8 +133,8 @@
     .ud-menu-scroll:hover { color: var(--primary) !important; }
     .navbar-nav { gap: 4px; }
     .nav-item { list-style: none; }
-    .navbar-toggler { background: none; border: 2px solid var(--primary); border-radius: 6px; padding: 6px 10px; cursor: pointer; }
-    .toggler-icon { display: block; width: 22px; height: 2px; background: var(--primary); margin: 4px 0; border-radius: 2px; }
+    .navbar-toggler { background: none !important; border: 2px solid var(--primary) !important; border-radius: 6px; padding: 6px 10px; cursor: pointer; box-shadow: none !important; }
+    .navbar-toggler .toggler-icon { display: block !important; width: 22px; height: 2px; background: var(--primary); margin: 4px 0; border-radius: 2px; opacity: 1 !important; }
     .navbar-collapse { display: flex; align-items: center; justify-content: space-between; flex: 1; }
     .navbar-btn { display: flex; gap: 10px; align-items: center; }
     .btn-book { background: var(--primary); color: var(--white) !important; border-radius: 8px; padding: 10px 22px !important; font-weight: 600; font-size: 14px; transition: background .2s; text-decoration: none; }
@@ -685,7 +685,7 @@
                 </div>
               </div>
             </div>
-            <a href="https://maps.google.com/" target="_blank" class="map-placeholder">
+            <a href="https://maps.app.goo.gl/jnzrwFVMF1hLE2g77" target="_blank" class="map-placeholder">
               <i class="lni lni-map-marker"></i>
               <span>View on Google Maps</span>
               <small style="font-size:12px;color:var(--text-muted);">Doddaballapura main road, Bangalore</small>
@@ -732,7 +732,7 @@
                 <label for="message">Message / Describe Your Condition</label>
                 <textarea id="message" placeholder="Briefly describe your pain or condition, how long you've had it, and any previous treatments..."></textarea>
               </div>
-              <button type="submit" class="btn-submit">📅 Request Appointment</button>
+              <button type="submit" class="btn-submit">Request Appointment</button>
             </form>
           </div>
         </div>
@@ -887,7 +887,7 @@
       var service = document.getElementById('service').value;
       var msg = document.getElementById('message').value;
       var waMsg = encodeURIComponent('Hi Physioverse! I would like to book an appointment.\n\nName: ' + name + '\nPhone: ' + phone + '\nService: ' + (service || 'General') + '\nDetails: ' + msg);
-      window.open('https://wa.me/919876543210?text=' + waMsg, '_blank');
+      window.open('https://wa.me/91?text=' + waMsg, '_blank');
     });
 
     // Init WOW
